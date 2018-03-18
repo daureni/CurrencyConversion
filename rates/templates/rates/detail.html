@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'rates/style.css' %}" />
+</head>
+
+<body>
+    <h3>1 {{ currency.currency_name }}({{ currency.code }}) equal to:</h3>
+    <ul>
+        {% for i in rates_list %}
+          <li>{{ i.cur }}: {{ i.value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

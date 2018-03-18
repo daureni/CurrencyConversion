@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'rates/style.css' %}" />
+</head>
+
+<body>
+    <div>
+        <h1>Currency Conversion</h1>
+        <h3>Please choose currency to convert:</h3>
+        {% if current_currency_list %}
+            <ul>
+            {% for currency in current_currency_list %}
+                <li><a href="{% url 'rates:detail' currency.id %}">{{ currency.currency_name }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No currencies are available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

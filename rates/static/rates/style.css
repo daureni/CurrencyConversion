@@ -1,0 +1,45 @@
+body {
+  font-family: "PT Sans", Arial, serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #666666;
+  color: #7f7f7f;
+  background: lavender;
+  height: 100%;
+  position: relative;
+}
+
+h1{
+  font-size: 36px;
+  color: InfoText;
+}
+
+h2{
+  font-size:20px;
+}
+
+h3{
+  font-size: 14px;
+  color: darkblue;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+a {
+  color: blueviolet;
+  -webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+}
+
+a:hover, a:focus {
+  color:rgba(0,0,0,.85);
+  text-decoration:none;
+}
+
+li {
+  font-size: 12px;
+  color: darkgreen;
+}
